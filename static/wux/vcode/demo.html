@@ -1,0 +1,45 @@
+    <html>
+        <script type="text/javascript">
+
+
+                function generateHtml(){
+        var code = generateCode();
+        var html = '';
+        for(var i =0; i<4;i++){
+            var r = Math.floor(Math.random()*250);
+            var g = Math.floor(Math.random()*250);
+            var b = Math.floor(Math.random()*250);
+            var rote;
+            if(Math.random()*10 > 5){
+                rote = parseInt(Math.random()*30);
+            } else {
+                rote = parseInt(Math.random()*30) * (-1);
+            }
+            html += '<span style="color:rgb('+r+','+g+','+b+');transform: rotate('+rote+'deg);">'+ code[i] +'</span>';
+        }
+        // document.getElementById('verificationCode').html(html);
+        console.log(html)
+    }
+
+    /*
+    * 生成验证码
+     */
+    function generateCode() {
+        var codeArr = ['2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','k','m','n','p','q','r','s','t','u','v','w','x','y','z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        var code = [];
+        for(var i=0; i<4;i++){
+            var num = Math.floor(Math.random()*53);
+            code.push(codeArr[num]);
+        }
+        return code;
+    }
+    generateHtml();
+
+        </script>
+
+        <body>
+            <div id="verificationCode"></div>
+<span style="color:rgb(181,86,65);transform: rotate(-26deg);">3</span><span style="color:rgb(116,219,87);transform: rotate(-12deg);">Y</span><span style="color:rgb(188,101,19);transform: rotate(19deg);">m</span><span style="color:rgb(188,46,10);transform: rotate(-15deg);">B</span>
+        </body>
+
+    </html>

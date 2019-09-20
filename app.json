@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/index/index",
+        "pages/my/index/index"
+    ],
+    "window":
+    {
+       "navigationBarBackgroundColor": "#ffb668",
+        "navigationBarTextStyle": "white"
+    },
+    "usingComponents":
+    {
+        "cu-custom": "./colorui/components/cu-custom",
+        "wux-vcode": "./static/wux/vcode/index",
+        "wux-toast": "./static/wux/toast/index",
+        "wux-notice-bar": "./static/wux/notice-bar/index",
+        "wux-segmented-control": "./static/wux/segmented-control/index"
+    },
+    "navigateToMiniProgramAppIdList":[
+        "wxb1d395a44c5bb865",
+        "wx46c041a9735acfd8",
+        "wx2f7b7ce056589d1b"
+    ],
+    "sitemapLocation": "sitemap.json"
+}

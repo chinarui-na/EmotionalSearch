@@ -1,0 +1,10 @@
+page{
+	background-color: #fff
+}
+
+/* pages/home/index/index.wxss */
+.fab{
+	position: fixed;
+	bottom: calc(120rpx + env(safe-area-inset-bottom) / 2);
+	right:20rpx
+}

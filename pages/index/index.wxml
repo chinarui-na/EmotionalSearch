@@ -1,0 +1,13 @@
+<home wx:if="{{currentTab=='home'}}" tabbarHeight="{{tabbarHeight}}"></home>
+<my wx:if="{{currentTab=='my'}}"></my>
+<view class="cu-bar tabbar  bg-white foot">
+    <view class="action {{currentTab=='home'?'text-main':'text-gray'}}" bindtap='navChange' data-cur="home">
+        <view class="icon-search"></view>搜一搜
+    </view>
+   
+    <view class="action {{currentTab=='my'?'text-main':'text-gray'}}" bindtap='navChange' data-cur="my">
+        <view class="icon-people">
+        </view>
+        我
+    </view>
+</view>

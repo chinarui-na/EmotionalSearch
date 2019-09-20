@@ -1,0 +1,47 @@
+<scroll-view scroll-y class="scrollPage">
+    <view class="UCenter-bg">
+        <view class="text-xxl">斗图plus
+            <text class="text-df">v1.0</text>
+        </view>
+        <view class="margin-top-sm">
+            <text>By:chinarui</text>
+        </view>
+        <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+    <view class="margin-top"></view>
+    <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+        <view class="cu-item arrow">
+            <view class="content" bind:tap="cashbook">
+                <text class="icon-cashbook text-orange"></text>
+                <text class="text-grey">好用的记账本</text>
+            </view>
+        </view>
+         <view class="cu-item arrow">
+            <view class="content" bind:tap="fontCreate">
+                <text class="icon-smile text-cyan"></text>
+                <text class="text-grey">文字表情生成器</text>
+            </view>
+        </view>
+
+        <view class="cu-item arrow">
+            <view class="content" bindtap="trashSort">
+                <text class="icon-DryTrash text-orange"></text>
+                <text class="text-grey">垃圾分类</text>
+            </view>
+        </view>
+        <view class="cu-item arrow">
+            <view class="content" bindtap="showQrcode">
+                <text class="icon-damuzhi text-red"></text>
+                <text class="text-grey">打赏一块钱</text>
+            </view>
+        </view>
+        <view class="cu-item arrow">
+            <button class="cu-btn content" open-type="feedback">
+                <text class="icon-view text-grey"></text>
+                <text class="text-grey">意见反馈</text>
+            </button>
+        </view>
+    </view>
+    <view class="cu-tabbar-height"></view>
+</scroll-view>
+<wux-toast id="wux-toast" />
