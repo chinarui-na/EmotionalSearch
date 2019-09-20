@@ -1,7 +1,7 @@
 // store.js
 const state = {
   userId: 'qqq',
-  server:'https://interface.chinarui.cn/',
+  server:'http://172.16.2.229:8180',
   ip:'http://172.16.2.229',
   port:'8180',
   HTTP: 'http://172.16.2.229:8180'
