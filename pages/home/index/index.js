@@ -48,8 +48,7 @@ Component({
         searchEmo(info) {
             var _info = encodeURI(info+'表情')
             // let searchUrl = "https://pic.sogou.com/pics/json.jsp?query="+_info+"&st=5&start=0&xml_len=60&callback=data&reqFrom=wap_result&"
-            let searchUrl = "https://interface.chinarui.cn/cashbook/conf/rest/emon/search/" + _info
-            // let searchUrl = "http://172.16.3.113:8128/conf/rest/emon/search/" + _info
+            let searchUrl = "http://127.0.0.1:8128/conf/rest/emon/search/" + _info
             // let searchUrl = 'https://pic.sogou.com/pics?query='+ _info +'&mode=1&start=100&reqType=ajax&reqFrom=result&tn=0'
             let imgReg = /['"]picUrl['"][:]['"]([^'"]+)['"]+/g;
             console.log(searchUrl)
