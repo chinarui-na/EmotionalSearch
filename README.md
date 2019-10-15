@@ -8,4 +8,4 @@
 线上小程序
 
 
-<img src="https://github.com/chinarui-na/EmotionalSearch/blob/master/wechat_code.jpg" width="300" hegiht="300" align=center />
+<img src="wechat_code.jpg" width="300" hegiht="300" align=center />

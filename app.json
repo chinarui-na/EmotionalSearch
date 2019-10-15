@@ -12,10 +12,7 @@
     "usingComponents":
     {
         "cu-custom": "./colorui/components/cu-custom",
-        "wux-vcode": "./static/wux/vcode/index",
-        "wux-toast": "./static/wux/toast/index",
-        "wux-notice-bar": "./static/wux/notice-bar/index",
-        "wux-segmented-control": "./static/wux/segmented-control/index"
+        "wux-toast": "./static/wux/toast/index"
     },
     "navigateToMiniProgramAppIdList":[
         "wxb1d395a44c5bb865",

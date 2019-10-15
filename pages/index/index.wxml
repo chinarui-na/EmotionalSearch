@@ -11,3 +11,4 @@
         我
     </view>
 </view>
+	<wux-toast id="wux-toast" />

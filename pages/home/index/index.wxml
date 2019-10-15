@@ -2,34 +2,41 @@
     <view slot="backText"></view>
     <view slot="content">斗图plus</view>
 </cu-custom> -->
+
 <view style='position:fixed;top:0px;z-index:1024;width:100%;'>
-    <image src='../../../images/head.png' class='png' style="width:100%; height:200rpx;">
-        <view class="cu-bar search padding" style="width:100%;position:fixed;top:30rpx;z-index:9999">
-            <view class="search-form" style="height:80rpx;">
-                <text class="icon-search"></text>
-                <input type="text" style="height:80rpx" bindconfirm="inputConfirm" value="{{search_info}}" placeholder="输入搜索的关键词">
-                </input>
-            </view>
-        </view>
-    </image>
-    <scroll-view scroll-y style="height:calc(100vh - {{CustomBar}}px - 100px)">
-        <wux-notice-bar loop="false" id="noticeBar">
-            <block wx:for="{{tipArr}}" wx:for-index="idx" wx:for-item="item" wx:key="tip">
-                <view class="cu-tag radius" style="background-color:#fefcee" bind:tap="tipClick" data-index="{{idx}}">{{item}}</view>
-            </block>
-        </wux-notice-bar>
-        <view class="bg-white padding">
-            <view class="grid col-4 grid-square">
-                <view class="bg-img" wx:for="{{imgs}}" bind:tap="imgView" wx:for-index="idx" data-index="{{idx}}" wx:for-item="item" wx:key="*this" style="background-image:url({{item.thumbUrl}});"></view>
-            </view>
-            <!-- <view class="grid col-4 grid-square">
+	<image src='../../../images/head.png' class='png' style="width:100%; height:200rpx;">
+		<view class="cu-bar search padding" style="width:100%;position:fixed;top:30rpx;z-index:9999">
+			<view class="search-form" style="height:80rpx;">
+				<text class="icon-search"></text>
+				<input type="text" style="height:80rpx" bindconfirm="inputConfirm" value="{{search_info}}" placeholder="输入搜索的关键词">
+				</input>
+			</view>
+		</view>
+	</image>
+	<scroll-view scroll-y scroll-top='{{topNum}}' bindscroll="scrolltoupper" bindscrolltolower="loadMore" lower-threshold='0' style="height:calc(100vh - {{CustomBar}}px - 100px)">
+		<wux-notice-bar loop="false" id="noticeBar">
+			<block wx:for="{{tipArr}}" wx:for-index="idx" wx:for-item="item" wx:key="tip">
+				<view class="cu-tag radius" style="background-color:#fefcee" bind:tap="tipClick" data-index="{{idx}}">{{item}}</view>
+			</block>
+		</wux-notice-bar>
+		<view class="bg-white padding">
+			<view class="grid col-4 grid-square">
+				<view class="bg-img" wx:for="{{imgs}}" bind:tap="imgView" wx:for-index="idx" data-index="{{idx}}" wx:for-item="item"
+				 wx:key="*this" style="background-image:url({{item.thumbUrl}});"></view>
+			</view>
+			<!-- <view class="grid col-4 grid-square">
              <view class="bg-img" style="background-image:url(http://img01.sogoucdn.com/app/a/100520021/2bebe8916e4c441e94a0d2196d561b3f);"></view>
              </view> -->
-            <!-- <image class="" src="https://i02piccdn.sogoucdn.com/abc5dd4483a8b8d4" mode="scaleToFill"></image> -->
-        </view>
-        <view class='cu-tabbar-height'></view>
-    </scroll-view>
-   <!--  <view style="" class="fab" bind:tap="contactCustomer">
+			<!-- <image class="" src="https://i02piccdn.sogoucdn.com/abc5dd4483a8b8d4" mode="scaleToFill"></image> -->
+		</view>
+		<!-- <view class='cu-tabbar-height'></view> -->
+	</scroll-view>
+	<view style="" class="fab" hidden='{{!cangotop}}' bindtap="gotoTop">
+		<view class="cu-avatar lg round bg-main">
+			<text class="icon-gotop  text-white"></text>
+		</view>
+	</view>
+	<!--  <view style="" class="fab" bind:tap="contactCustomer">
         <view class="cu-avatar lg round bg-white">
             <text class="icon-share  text-lred"></text>
         </view>

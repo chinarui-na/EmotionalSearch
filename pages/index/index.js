@@ -1,6 +1,5 @@
 // pages/index/index.js
 var store = require('../../utils/store.js');
-
 Page({
     data: {
         currentTab: "home"

@@ -1,11 +1,11 @@
 // store.js
 const state = {
   userId: 'qqq',
-  server:'http://172.16.2.229:8180',
+  // server:'http://172.16.2.229:8180',
   ip:'http://172.16.2.229',
   port:'8180',
-  HTTP: 'http://172.16.2.229:8180'
-  // server: 'http://127.0.0.1:9090/cash/'
+  HTTP: 'http://172.16.2.229:8180',
+  server: 'https://api.chinarui.cn:9090/cash/'
 };
 
 function commit(key, val) {
