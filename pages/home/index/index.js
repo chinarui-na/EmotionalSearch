@@ -6,7 +6,7 @@ Component({
 	},
 	lifetimes: {
 		attached() {
-			this.searchEmo('斗图')
+			this.searchEmo('斗图',false)
 		},
 		detached() {},
 	},
@@ -19,7 +19,7 @@ Component({
 		CustomBar: app.globalData.CustomBar,
 		searchUrl: "https://pic.sogou.com/pics/json.jsp?",
 		tipArr: ['Giao哥', '可爱', '李现', '大佬', '王者荣耀', '么么哒'],
-		search_info: '斗图',
+		search_info: '',
 		pageNum:0,
 		topNum:0,
 		cangotop:false
@@ -74,7 +74,7 @@ Component({
 		searchEmo(info,needConcat) {
 			var _info = encodeURI(info)
 			let searchUrl = "https://interface.chinarui.cn/cashbook/conf/rest/emon/search/" + _info + "/" + this.data.pageNum
-			// let searchUrl = "http://172.16.3.42:8128/conf/rest/emon/search/" + _info+ "/" + this.data.pageNum
+			// let searchUrl = "http://127.0.0.1:8128/conf/rest/emon/search/" + _info+ "/" + this.data.pageNum
 			let imgReg = /['"]picUrl['"][:]['"]([^'"]+)['"]+/g;
 			app.get(searchUrl).then(res => {
 				var data = res.data

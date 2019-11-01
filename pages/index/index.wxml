@@ -4,6 +4,11 @@
     <view class="action {{currentTab=='home'?'text-main':'text-gray'}}" bindtap='navChange' data-cur="home">
         <view class="icon-search"></view>搜一搜
     </view>
+	
+	<view class="action text-main add-action">
+	    <button class="cu-btn icon-share bg-main shadow" open-type="share" ></button>
+		分享
+	</view>
    
     <view class="action {{currentTab=='my'?'text-main':'text-gray'}}" bindtap='navChange' data-cur="my">
         <view class="icon-people">

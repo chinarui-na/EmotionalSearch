@@ -8,7 +8,7 @@
 		<view class="cu-bar search padding" style="width:100%;position:fixed;top:30rpx;z-index:9999">
 			<view class="search-form" style="height:80rpx;">
 				<text class="icon-search"></text>
-				<input type="text" style="height:80rpx" bindconfirm="inputConfirm" value="{{search_info}}" placeholder="输入搜索的关键词">
+				<input type="text" style="height:80rpx" confirm-type="search" bindconfirm="inputConfirm" value="{{search_info}}" placeholder="输入搜索的关键词">
 				</input>
 			</view>
 		</view>
