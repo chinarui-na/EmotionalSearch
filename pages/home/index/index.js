@@ -73,8 +73,7 @@ Component({
 		},
 		searchEmo(info,needConcat) {
 			var _info = encodeURI(info)
-			let searchUrl = "https://interface.chinarui.cn/cashbook/conf/rest/emon/search/" + _info + "/" + this.data.pageNum
-			// let searchUrl = "http://127.0.0.1:8128/conf/rest/emon/search/" + _info+ "/" + this.data.pageNum
+			let searchUrl = "http://127.0.0.1:8128/conf/rest/emon/search/" + _info+ "/" + this.data.pageNum
 			let imgReg = /['"]picUrl['"][:]['"]([^'"]+)['"]+/g;
 			app.get(searchUrl).then(res => {
 				var data = res.data
