@@ -8,4 +8,4 @@
 线上小程序
 
 
-<img src="wechat_code.jpg" width="300" hegiht="300" align=center />
+<img src="http://img.chinarui.cn/wechat_code.jpg" width="300" hegiht="300" align=center />
